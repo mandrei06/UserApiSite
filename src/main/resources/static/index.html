@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Cypress Real World App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <style type="text/css">
+  input {
+  margin-top: 20px;
+     height:30px;
+     width:300px;}
+
+    input:focus {
+  outline: none;
+  border: 3px solid #3f50b5;
+}
+  </style>
+</head>
+<body>
+
+<div style="width: 50%; margin: 0 auto;">
+    <img src="/logo.png">
+    <br>
+    <br>
+
+    <br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br>
+
+
+    <form action="/login" method="POST" style="width: 50%; margin: 0 auto;">
+        <div>
+            <input name="username" id="username" placeholder="Username" required>
+        </div>
+        <div>
+            <input name="password" id="password" type="password" placeholder="Password" required>
+        </div>
+        <div>
+            <button style="margin-top: 20px;color: white; margin-left: 70px; background-color:#3f50b5">LOG IN</button>
+        </div>
+    </form>
+    <form action="/signup" method="POST" style="width: 50%; margin: 0 auto;">
+        <div>
+            <button style="margin-top: 20px;color: white; margin-left: 70px; background-color:#3f50b5">SIGN UP</button>
+        </div>
+    </form>
+
+</div>
+</body>
+</html>

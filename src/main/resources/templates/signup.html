@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <title>Cypress Real World App</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+  <style type="text/css">
+  input {
+  margin-top: 20px;
+     height:30px;
+     width:300px;}
+
+    input:focus {
+  outline: none;
+  border: 3px solid #3f50b5;
+}
+  </style>
+</head>
+<body>
+
+<div style="width: 50%; margin: 0 auto;">
+  <img src="/logo.png">
+
+
+  <form action="/add" method="POST" style="width: 50%; margin: 0 auto;">
+    <div>
+      <input name="first" id="firstName" placeholder="First Name" value="Andy" required>
+    </div>
+    <div>
+      <input name="last" id="lastName" placeholder="Last Name" value="Blue" required>
+    </div>
+    <div>
+      <input name="username" id="username" placeholder="Username" value="solera@solera.com" required>
+    </div>
+    <div>
+      <input name="password" id="password" type="password" placeholder="Password" value="bootcamp2" required>
+    </div>
+    <div>
+      <input name="repeatPass" id="repeatPass" type="password" placeholder="Confirm Password" value="bootcamp2" required>
+    </div>
+    <div>
+      <button style="margin-top: 20px;color: white; margin-left: 70px; background-color:#4747d1">SIGN UP</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

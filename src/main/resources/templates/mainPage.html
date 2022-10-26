@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+</head>
+<body>
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light">Hello</div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/home" }>Home</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/myAccount">My Account</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/bankAccount">Bank
+                Accounts</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/notifications">Notifications</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/logOut">Logout</a>
+        </div>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" style="background:#3f50b5">
+            <div class="container-fluid">
+                <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <img src="/img.png">
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container-fluid">
+            <h1 class="mt-4">Welcome to Real World App</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis metus a turpis semper consectetur.
+                In eu viverra augue. Sed tristique consectetur gravida. Vivamus imperdiet enim dui, vel accumsan ante
+                efficitur suscipit. Pellentesque vel sollicitudin erat, eget mollis risus. Duis ut congue magna. Etiam
+                viverra est a eleifend tempor. Aenean massa augue, finibus eget metus vel, semper tempus lectus.
+                Praesent ac justo fermentum, pulvinar magna et, convallis enim. Aliquam eu ornare eros. In tristique
+                viverra sagittis. Fusce sit amet velit vulputate, consectetur mauris a, volutpat justo. Pellentesque a
+                ipsum sit amet enim facilisis euismod mollis sit amet nunc. Maecenas sit amet malesuada enim, ac
+                tristique leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut lacus non nisl
+                sollicitudin aliquam.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script th:src="@{/scripts.js}"></script>
+</body>
+</html>
